@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="GBK" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Decoo (Design To Code)</title>
+    @Styles.Render("~/Content/Bootstrap/bootstrap.css")
+    @Styles.Render("~/Content/Bootstrap/bootstrap-theme.min.css")
+    @Styles.Render("~/Content/Bootstrap/bootstrap-editable.css")
+    @Styles.Render("~/Content/Bootstrap/bootstrap-datetimepicker.min.css")
+    @Scripts.Render("~/Scripts/JQuery/jquery-2.1.3.js")
+    @Scripts.Render("~/Scripts/Bootstrap/bootstrap.min.js")
+    @Scripts.Render("~/Scripts/UUID.js")
+    @Scripts.Render("~/Scripts/DataTable.js")
+    @Scripts.Render("~/Scripts/DataGridView.js")
+    @Scripts.Render("~/Scripts/moment.js")
+    @Scripts.Render("~/Scripts/Bootstrap/bootstrap-datetimepicker.min.js")
+</head>
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+    <div class="row">
+        @RenderPage("~/Views/Shared/_Header.cshtml")
+    </div>
+    @RenderBody()
+</body>
+</html>
